@@ -6,7 +6,8 @@
     "build": "NODE_ENV=production parcel build src/*.html"
   },
   "dependencies": {
-    "@sanctucompu/basement": "^1.1.0"
+    "@sanctucompu/basement": "^1.1.0",
+    "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
     "sass": "^1.26.10"
