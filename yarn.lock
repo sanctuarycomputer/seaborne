@@ -940,6 +940,7 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@sanctucompu/basement/-/basement-1.1.0.tgz#abb787096744d583583cddf8d641c29c9963dc85"
   integrity sha512-l6wtsx0WYg0l+h9d9/t1txrcfLY/KZcPfOvcsQiD8ClWxavJVwADnsbstdg5CMmkT0p0/XNU/7J29msYeRuebg==
+<<<<<<< HEAD
 
 "@types/color-name@^1.1.1":
   version "1.1.1"
@@ -5848,3 +5849,5 @@ yaml@^1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.0.tgz#3b593add944876077d4d683fee01081bd9fff31e"
   integrity sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
+=======
+>>>>>>> Add parcel
