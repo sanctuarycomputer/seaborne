@@ -1,0 +1,11 @@
+{
+  "name": "seaborne",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "NODE_ENV=production parcel build src/*.html"
+  },
+  "dependencies": {
+    "@sanctucompu/basement": "^1.1.0"
+  }
+}
