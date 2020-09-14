@@ -55,3 +55,9 @@ button {
   background-color: transparent;
   text-decoration: none;
 }
+
+.button--style-no-style {
+  @extend %transition-shorter;
+  background-color: transparent;
+  text-decoration: none;
+}
