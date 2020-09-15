@@ -78,12 +78,6 @@ button {
   text-decoration: none;
 }
 
-.button--style-no-style {
-  @extend %transition-shorter;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 //Header
 .header {
   padding-bottom: 6.4375rem;
