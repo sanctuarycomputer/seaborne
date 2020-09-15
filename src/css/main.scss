@@ -95,3 +95,28 @@ button {
     padding-bottom: 15.6875rem;
   }
 }
+
+//Offerings Section
+.offerings-columns-container {
+  padding: 4.9375rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 3.5rem;
+
+  @include media('sm-up') {
+    padding: 7.375rem 0;
+    grid-column-gap: 3rem;
+    grid-row-gap: 7.875rem;
+  }
+
+  @include media('md-up') {
+    padding: 8.4375rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.75rem;
+  }
+}
+
+.pink-background {
+  height: 54.625rem;
+}
