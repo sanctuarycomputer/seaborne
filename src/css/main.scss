@@ -26,8 +26,30 @@
 }
 
 //Buttons
+
+a,
 button {
   cursor: pointer;
+}
+
+.button--style-primary {
+  @extend %transition-shorter;
+  background-color: color('blue');
+  text-decoration: none;
+  color: color('white');
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  line-height: 1;
+  width: 10.0625rem;
+
+  &:hover {
+    background-color: color('blue-darker');
+  }
+
+  @include media('md-up') {
+    width: 12.0625rem;
+    padding: 1.3125rem 2.75rem 1.3125rem 2.75rem;
+  }
 }
 
 .button--style-blue-border {
@@ -60,4 +82,13 @@ button {
   @extend %transition-shorter;
   background-color: transparent;
   text-decoration: none;
+}
+
+//Header
+.header {
+  padding-bottom: 6.4375rem;
+
+  @include media('md-up') {
+    padding-bottom: 10.125rem;
+  }
 }
