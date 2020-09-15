@@ -24,3 +24,34 @@
     padding-right: $site-padding-x-desktop;
   }
 }
+
+//Buttons
+button {
+  cursor: pointer;
+}
+
+.button--style-blue-border {
+  @extend %transition-shorter;
+  background-color: transparent;
+  border: 1px solid color('blue');
+  text-decoration: none;
+  color: color('blue');
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  line-height: 1;
+
+  &:hover {
+    background-color: color('blue');
+    color: color('white');
+  }
+
+  @include media('md-up') {
+    padding: 0.75rem 1.3125rem 0.75rem 1.3125rem;
+  }
+}
+
+.button--style-no-style {
+  @extend %transition-shorter;
+  background-color: transparent;
+  text-decoration: none;
+}

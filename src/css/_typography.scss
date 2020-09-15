@@ -32,7 +32,10 @@ em {
   font-weight: 300;
 }
 
-.text-header, .text-sub-header, .text-body, .text-body-sm {
+.text-header,
+.text-sub-header,
+.text-body,
+.text-body-sm {
   font-family: $be-vietnam;
 }
 
@@ -78,6 +81,7 @@ em {
 .text-body-sm {
   font-size: 0.75rem;
   line-height: 1.375rem;
+  font-weight: 400;
 
   @include media('md-up') {
     font-size: 0.875rem;
