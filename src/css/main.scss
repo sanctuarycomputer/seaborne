@@ -1,0 +1,26 @@
+@import 'config';
+@import '~@sanctucompu/basement/src/index';
+@import 'settings', 'reset', 'typography';
+
+.site-content-max-width {
+  max-width: $site-content-max-width;
+}
+
+.inner-content-max-width {
+  max-width: $inner-content-max-width;
+}
+
+.site-padding-x {
+  padding-left: $site-padding-x-mobile;
+  padding-right: $site-padding-x-mobile;
+
+  @include media('sm-up') {
+    padding-left: $site-padding-x-tablet;
+    padding-right: $site-padding-x-tablet;
+  }
+
+  @include media('md-up') {
+    padding-left: $site-padding-x-desktop;
+    padding-right: $site-padding-x-desktop;
+  }
+}
