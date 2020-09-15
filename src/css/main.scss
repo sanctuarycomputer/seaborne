@@ -37,8 +37,13 @@ button {
   background-color: color('blue');
   text-decoration: none;
   color: color('white');
+<<<<<<< HEAD
   border-radius: 0.625rem;
   padding: 0.75rem 1.25rem;
+=======
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+>>>>>>> Add image
   line-height: 1;
   width: 10.0625rem;
 
@@ -48,7 +53,11 @@ button {
 
   @include media('md-up') {
     width: 12.0625rem;
+<<<<<<< HEAD
     padding: 1.3125rem 2.75rem;
+=======
+    padding: 1.3125rem 2.75rem 1.3125rem 2.75rem;
+>>>>>>> Add image
   }
 }
 
@@ -76,6 +85,15 @@ button {
   @extend %transition-shorter;
   background-color: transparent;
   text-decoration: none;
+}
+
+//Header
+.header {
+  padding-bottom: 6.4375rem;
+
+  @include media('md-up') {
+    padding-bottom: 10.125rem;
+  }
 }
 
 //Header
