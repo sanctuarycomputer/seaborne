@@ -78,19 +78,6 @@ button {
   text-decoration: none;
 }
 
-// .arrow {
-//   margin-top: -1.125rem;
-// }
-
-//Header
-.header {
-  padding-bottom: 6.4375rem;
-
-  @include media('md-up') {
-    padding-bottom: 10.125rem;
-  }
-}
-
 //Header
 .header {
   padding-bottom: 6.4375rem;
