@@ -78,6 +78,10 @@ button {
   text-decoration: none;
 }
 
+// .arrow {
+//   margin-top: -1.125rem;
+// }
+
 //Header
 .header {
   padding-bottom: 6.4375rem;
@@ -93,5 +97,14 @@ button {
 
   @include media('md-up') {
     padding-bottom: 10.125rem;
+  }
+}
+
+//Impact
+.impact-section {
+  padding-bottom: 13.625rem;
+
+  @include media('md-up') {
+    padding-bottom: 15.6875rem;
   }
 }
