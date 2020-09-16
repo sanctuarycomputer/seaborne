@@ -95,3 +95,32 @@ button {
     padding-bottom: 15.6875rem;
   }
 }
+
+//Offerings Section
+.offerings-columns-container {
+  padding-top: 4.9375rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 3.5rem;
+
+  @include media('sm-up') {
+    padding-top: 7.375rem;
+    grid-column-gap: 3rem;
+    grid-row-gap: 7.875rem;
+  }
+
+  @include media('md-up') {
+    padding-top: 8.4375rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.75rem;
+  }
+}
+
+.offerings-section {
+  min-height: 51.375rem;
+}
+
+.pink-background-bottom-shape {
+  bottom: -1%;
+}
