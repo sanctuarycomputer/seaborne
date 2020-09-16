@@ -86,3 +86,12 @@ button {
     padding-bottom: 10.125rem;
   }
 }
+
+//Impact
+.impact-section {
+  padding-bottom: 13.625rem;
+
+  @include media('md-up') {
+    padding-bottom: 15.6875rem;
+  }
+}
