@@ -87,12 +87,21 @@ button {
   }
 }
 
-//Impact
+//Impact Section
 .impact-section {
   padding-bottom: 13.625rem;
 
   @include media('md-up') {
     padding-bottom: 15.6875rem;
+  }
+}
+
+//Journey Section
+.journey-section {
+  padding-bottom: 4.3125rem;
+
+  @include media('md-up') {
+    padding-bottom: 11.4375rem;
   }
 }
 
