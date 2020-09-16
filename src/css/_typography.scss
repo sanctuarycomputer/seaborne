@@ -43,7 +43,8 @@ em {
 
 .text-button,
 .text-body,
-.text-body-sm {
+.text-body-sm,
+.text-footer {
   font-family: $be-vietnam;
 }
 
@@ -103,6 +104,12 @@ em {
 .text-footer {
   font-size: 0.75rem;
   line-height: 1.125rem;
+
+  a {
+    &:hover {
+      color: color('gray-darker');
+    }
+  }
 }
 
 a {

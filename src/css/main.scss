@@ -133,3 +133,16 @@ button {
 .pink-background-bottom-shape {
   bottom: -1%;
 }
+
+//Footer
+.footer {
+  border-top: 1px solid color('gray');
+
+  @include media('md-up') {
+    margin-top: 7.375rem;
+  }
+}
+
+.footer-detail-text {
+  margin-top: 0.1rem;
+}
