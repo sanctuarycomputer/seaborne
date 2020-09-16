@@ -26,8 +26,30 @@
 }
 
 //Buttons
+
+a,
 button {
   cursor: pointer;
+}
+
+.button--style-primary {
+  @extend %transition-shorter;
+  background-color: color('blue');
+  text-decoration: none;
+  color: color('white');
+  border-radius: 0.625rem;
+  padding: 0.75rem 1.25rem;
+  line-height: 1;
+  width: 10.0625rem;
+
+  &:hover {
+    background-color: color('blue-darker');
+  }
+
+  @include media('md-up') {
+    width: 12.0625rem;
+    padding: 1.3125rem 2.75rem;
+  }
 }
 
 .button--style-blue-border {
@@ -36,8 +58,8 @@ button {
   border: 1px solid color('blue');
   text-decoration: none;
   color: color('blue');
-  border-radius: 12px;
-  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
   line-height: 1;
 
   &:hover {
@@ -46,7 +68,7 @@ button {
   }
 
   @include media('md-up') {
-    padding: 0.75rem 1.3125rem 0.75rem 1.3125rem;
+    padding: 0.75rem 1.3125rem;
   }
 }
 
@@ -54,4 +76,13 @@ button {
   @extend %transition-shorter;
   background-color: transparent;
   text-decoration: none;
+}
+
+//Header
+.header {
+  padding-bottom: 6.4375rem;
+
+  @include media('md-up') {
+    padding-bottom: 10.125rem;
+  }
 }
