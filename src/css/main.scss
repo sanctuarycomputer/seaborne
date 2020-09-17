@@ -134,6 +134,33 @@ button {
   bottom: -1%;
 }
 
+//Contact
+.contact-page {
+  padding-left: $site-padding-x-mobile;
+  padding-right: $site-padding-x-mobile;
+
+  @include media('sm-up') {
+    padding-left: $site-padding-x-tablet;
+    padding-right: $site-padding-x-tablet;
+  }
+
+  @include media('md-up') {
+    padding-left: $site-padding-x-desktop;
+  }
+}
+
+.copy-button {
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 12.4375rem;
+}
+
+.contact-illustration {
+  @include media('md-up') {
+    margin-left: 30%;
+  }
+}
+
 //Footer
 .footer {
   border-top: 1px solid color('gray');

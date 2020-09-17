@@ -22,6 +22,37 @@
     <link rel="icon" href="" />
   </head>
   <body>
+    <div id="contact">
+      <section
+        class="flex flex-col sm:flex-row justify-between items-center site-content-max-width inner-content-max-width mxauto contact-page"
+      >
+        <div class="flex flex-col col-12 sm:col-4 pb3 sm:pb0">
+          <p class="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Ready to use less?</p>
+          <h2 class="text-header-sm color-gray pb2 sm:pb1_75 md:pb2_5">hello@seaborne.nyc</h2>
+          <a
+            aria-label="Copy Seaborne e-mail address to clipboard"
+            class="copy-button button--style-blue-border text-button flex items-center justify-center"
+          >
+            Copy to clipboard
+          </a>
+        </div>
+        <div class="sm:col-6">
+          <img
+            class="w100 contact-illustration"
+            src="img/contact-illustration-lg.png"
+            srcset="
+              img/contact-illustration-sm.png 240w,
+              img/contact-illustration-md.png 400w,
+              img/contact-illustration-lg.png 720w
+            "
+            sizes="(min-width: 1200px) 720w,
+            (max-width: 768px) 400w,
+            (max-width: 380px) 240w"
+            alt="Illustration of person inside a large microphone yelling into an ear."
+          />
+        </div>
+      </section>
+    </div>
     <script src="js/contact.js"></script>
   </body>
 </html>

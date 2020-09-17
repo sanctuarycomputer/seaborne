@@ -48,8 +48,12 @@ em {
   font-family: $be-vietnam;
 }
 
-.text-header {
+.text-header,
+.text-header-sm,
+.text-subheader {
   font-family: $steinbeck;
+}
+.text-header {
   font-size: 2.25rem;
   line-height: 2.9375rem;
 
@@ -59,8 +63,17 @@ em {
   }
 }
 
+.text-header-sm {
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+
+  @include media('md-up') {
+    font-size: 3.796875rem;
+    line-height: 4.1875rem;
+  }
+}
+
 .text-subheader {
-  font-family: $steinbeck;
   font-size: 1.375rem;
   line-height: 1.8125rem;
 
