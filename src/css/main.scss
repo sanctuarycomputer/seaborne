@@ -136,8 +136,6 @@ button {
 
 //Contact Section
 .contact-section {
-  padding-bottom: 5rem;
-
   @include media('sm-up') {
     padding-bottom: 6.25rem;
   }
