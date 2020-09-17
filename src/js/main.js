@@ -67,6 +67,44 @@ export const main = () => {
     </section>
 
     <section
+        class="journey-section flex flex-col-reverse sm:flex-row justify-between items-center inner-content-max-width site-padding-x mxauto"
+      >
+        <div class="journey-image sm:col-6">
+          <img
+            class="w100"
+            src="img/journey-illustration-md.png"
+            srcset="
+              img/journey-illustration-sm.png 240w,
+              img/journey-illustration-md.png 400w,
+              img/journey-illustration-lg.png 720w
+            "
+            sizes="(min-width: 1200px) 720w,
+          (max-width: 768px) 400w,
+          (max-width: 380px) 240w"
+            alt="Illustration of two people in nature."
+          />
+        </div>
+        <div class="flex flex-col sm:col-4 pb3 sm:pb0">
+          <h2 class="text-subheader color-gray pb2 sm:pb1_75 md:pb2_5">
+            Let’s start on your journey.
+          </h2>
+          <p class="text-body color-gray sm:pb1_75 md:pb2_5">
+            We use research-backed methods to create clear and informative insights. We don’t
+            believe jargon or academic writing—we believe in taking action.
+          </p>
+          <div class="none md:flex flex-row">
+            <div class="flex items-start">
+              <img class="arrow pr2" src="img/arrow.svg" alt="Blue arrow on a light blue circle" />
+            </div>
+            <p class="text-body-sm color-gray mt1">
+              We use a different type of communication to our clients to help them understand their
+              impact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <section
       class="offerings-section items-center justify-center flex flex-col relative bg-color-pink py6"
     >
       <div class="absolute t0 w100">
