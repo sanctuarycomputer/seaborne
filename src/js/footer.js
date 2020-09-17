@@ -1,7 +1,10 @@
-import seaborneIcon from '../img/seaborne-icon.svg';
+import seaborneIconSrc from '../img/seaborne-icon.svg';
 
 export const footer = () => {
   //To-do: Update all links. Add logic to check if environment is not production, then use '.html'
+  const seaborneIcon = document.createElement('img');
+  seaborneIcon.src = seaborneIconSrc;
+  seaborneIcon.classList = 'seaborne-icon';
 
   const wrapper = document.createElement('footer');
   wrapper.classList = 'footer pt6 sm:py1_75 mt3_5 sm:mt5_75 md:pt3_5 md:pb2_5';
@@ -10,7 +13,7 @@ export const footer = () => {
   <div class="inner-content-max-width mxauto">
       <div class="flex flex-col-reverse sm:flex-row justify-between site-padding-x mxauto">
         <div class="flex flex-row justify-center sm:justify-start sm:col-6 pb1_75 sm:pb0 sm:pt1_75">
-          <div class="flex items-start">
+          <div class="footer-detail-container flex items-start">
             <p class="footer-detail-text color-gray text-footer">
               Seaborne is a sister company to
               <a
@@ -20,7 +23,6 @@ export const footer = () => {
                 >Sanctuary Computer</a
               >
             </p>
-            <img class="seaborne-icon" src="" alt="Seaborne icon" />
           </div>
         </div>
         <div
@@ -43,7 +45,12 @@ export const footer = () => {
       </div>`;
 
   window.addEventListener('load', function () {
-    document.getElementsByClassName('seaborne-icon')[0].src = seaborneIcon;
+    const footerDetailContainer = document.getElementsByClassName('footer-detail-container')[0];
+    const seaborneIconImg = document.getElementsByClassName('seaborne-icon')[0];
+
+    footerDetailContainer.appendChild(seaborneIcon);
+
+    seaborneIconImg.alt = 'Seaborne icon';
   });
 
   return wrapper;
