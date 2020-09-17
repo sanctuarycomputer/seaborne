@@ -8,7 +8,7 @@ export const header = () => {
 
   const wrapper = document.createElement('header');
   wrapper.classList =
-    'header site-padding-x inner-content-max-width mxauto flex justify-between items-center flex-row pt1';
+    'header site-padding-x inner-content-max-width mxauto flex justify-between items-center flex-row pt1 opacity-0';
 
   wrapper.innerHTML = `
     <a aria-label="Visit Seaborne" href="/index.html" class="button--style-no-style seaborne-logo">
