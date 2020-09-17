@@ -1,10 +1,6 @@
-import { main } from './main';
 import { header } from './header';
 import { footer } from './footer';
 
-const app = document.createElement('div');
-app.setAttribute('id', 'App');
-app.appendChild(header());
-app.appendChild(main());
+const app = document.getElementById('app');
+app.prepend(header());
 app.appendChild(footer());
-document.body.appendChild(app);
