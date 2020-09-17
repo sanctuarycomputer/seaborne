@@ -163,7 +163,7 @@ button {
 
 //Footer
 .footer {
-  border-top: 1px solid color('gray');
+  border-top: 1px solid color('gray-light');
 
   @include media('md-up') {
     margin-top: 7.375rem;
