@@ -4,10 +4,10 @@ export const footer = () => {
   //To-do: Update all links. Add logic to check if environment is not production, then use '.html'
 
   const wrapper = document.createElement('footer');
-  wrapper.classList =
-    'footer inner-content-max-width mxauto pt6 sm:py1_75 mt3_5 sm:mt5_75 md:pt3_5 md:pb2_5';
+  wrapper.classList = 'footer pt6 sm:py1_75 mt3_5 sm:mt5_75 md:pt3_5 md:pb2_5';
 
   wrapper.innerHTML = `
+  <div class="inner-content-max-width mxauto">
       <div class="flex flex-col-reverse sm:flex-row justify-between site-padding-x mxauto">
         <div class="flex flex-row justify-center sm:justify-start sm:col-6 pb1_75 sm:pb0 sm:pt1_75">
           <div class="flex items-start">
@@ -20,7 +20,7 @@ export const footer = () => {
                 >Sanctuary Computer</a
               >
             </p>
-            <img class="seaborne-icon" src="img/seaborne-icon.svg" alt="Seaborne icon" />
+            <img class="seaborne-icon" src="" alt="Seaborne icon" />
           </div>
         </div>
         <div
@@ -39,6 +39,7 @@ export const footer = () => {
             >Contact</a
           >
         </div>
+      </div>
       </div>`;
 
   window.addEventListener('load', function () {

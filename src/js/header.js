@@ -9,7 +9,7 @@ export const header = () => {
 
   wrapper.innerHTML = `
     <a aria-label="Visit Seaborne" href="/index.html" class="button--style-no-style">
-      <img class="seaborne-logo fit-contain w100" src="img/seaborne-logo.svg" alt="Seaborne logo" />
+      <img class="seaborne-logo fit-contain w100" src="" alt="Seaborne logo" />
     </a>
     <a
       aria-label="Get in touch with Seaborne"
