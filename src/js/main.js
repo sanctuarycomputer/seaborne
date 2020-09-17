@@ -1,3 +1,5 @@
+import heroIllustration from '../img/hero-illustration-md.png';
+
 export const main = () => {
   const wrapper = document.createElement('main');
 
@@ -20,16 +22,7 @@ export const main = () => {
       </div>
       <div class="hero-image">
         <img
-          class="w100"
-          src="img/hero-illustration-md.png"
-          srcset="
-            img/hero-illustration-sm.png 240w,
-            img/hero-illustration-md.png 400w,
-            img/hero-illustration-lg.png 720w
-          "
-          sizes="(min-width: 1200px) 720w,
-          (max-width: 768px) 400w,
-          (max-width: 380px) 240w"
+          class="hero-illustration w100"
           alt="Illustration of people doing outdoor activities in the mountains"
         />
       </div>
@@ -146,5 +139,31 @@ export const main = () => {
       </div>
     </section>
   `;
+
+  // document.getElementsByClassName('hero-illustration')[0].src = require('/img/hero-illustration-lg.png');
+
+  // heroIllustration.src = require('/img/hero-illustration-lg.png');
+
+  // wrapper.appendChild(parcelImg)
+
+  window.addEventListener('load', function () {
+    document.getElementsByClassName('hero-illustration')[0].src = heroIllustration;
+  });
+
   return wrapper;
 };
+
+// document.getElementsByClassName('hero-illustration')[0].srcset = `
+//         img/hero-illustration-sm.png 240w,
+//         img/hero-illustration-md.png 400w,
+//         img/hero-illustration-lg.png 720w
+//       `;
+
+// srcset="
+// img/hero-illustration-sm.png 240w,
+// img/hero-illustration-md.png 400w,
+// img/hero-illustration-lg.png 720w
+// "
+// sizes="(min-width: 1200px) 720w,
+// (max-width: 768px) 400w,
+// (max-width: 380px) 240w"
