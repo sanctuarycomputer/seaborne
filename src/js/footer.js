@@ -46,11 +46,9 @@ export const footer = () => {
 
   window.addEventListener('load', function () {
     const footerDetailContainer = document.getElementsByClassName('footer-detail-container')[0];
-    const seaborneIconImg = document.getElementsByClassName('seaborne-icon')[0];
-
     footerDetailContainer.appendChild(seaborneIcon);
 
-    seaborneIconImg.alt = 'Seaborne icon';
+    document.getElementsByClassName('seaborne-icon')[0].alt = 'Seaborne icon';
   });
 
   return wrapper;
