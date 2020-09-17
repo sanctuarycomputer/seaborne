@@ -78,13 +78,34 @@ button {
   text-decoration: none;
 }
 
+.arrow {
+  @extend %transition-short;
+
+  &:hover {
+    transform: translateX(0.25rem);
+  }
+}
+
 //Header
 .header {
+  animation: $transition-duration-longer $transition-cubic-bezier 0s 1 normal forwards
+    animation-fade-in-down;
   padding-bottom: 6.4375rem;
 
   @include media('md-up') {
     padding-bottom: 10.125rem;
   }
+}
+
+//Main Hero
+.main-hero-text {
+  animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
+    animation-fade-in-up;
+}
+
+.hero-image {
+  animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards
+    animation-fade-in-up;
 }
 
 //Impact Section
@@ -148,6 +169,9 @@ button {
 
 //Contact
 .contact-page {
+  animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
+    animation-fade-in-up;
+
   @include media('md-up') {
     padding-right: 0;
   }
