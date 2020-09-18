@@ -133,3 +133,35 @@ button {
 .pink-background-bottom-shape {
   bottom: -1%;
 }
+
+//Contact
+.contact-page {
+  @include media('md-up') {
+    padding-right: 0;
+  }
+}
+
+.copy-button {
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 12.4375rem;
+}
+
+.contact-illustration {
+  @include media('md-up') {
+    margin-left: 30%;
+  }
+}
+
+//Footer
+.footer {
+  border-top: 1px solid color('gray-light');
+
+  @include media('md-up') {
+    margin-top: 7.375rem;
+  }
+}
+
+.footer-detail-text {
+  margin-top: 0.1rem;
+}
