@@ -100,12 +100,12 @@ button {
 //Main Hero
 .main-hero-text {
   animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
-    animation-fade-in-up;
+    animation-fade-in;
 }
 
 .hero-image {
   animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards
-    animation-fade-in-up;
+    animation-fade-in;
 }
 
 //Impact Section
@@ -170,7 +170,7 @@ button {
 //Contact
 .contact-page {
   animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
-    animation-fade-in-up;
+    animation-fade-in;
 
   @include media('md-up') {
     padding-right: 0;
