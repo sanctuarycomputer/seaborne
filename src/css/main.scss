@@ -32,14 +32,23 @@ button {
   cursor: pointer;
 }
 
+.button--style-blue-border,
 .button--style-primary {
   @extend %transition-shorter;
-  background-color: color('blue');
   text-decoration: none;
-  color: color('white');
+  height: 2.375rem;
   border-radius: 0.625rem;
   padding: 0.75rem 1.25rem;
-  line-height: 1;
+  line-height: 0.75rem;
+
+  @include media('md-up') {
+    padding: 1.3125rem 2.75rem;
+  }
+}
+
+.button--style-primary {
+  background-color: color('blue');
+  color: color('white');
   width: 10.0625rem;
 
   &:hover {
@@ -48,27 +57,17 @@ button {
 
   @include media('md-up') {
     width: 12.0625rem;
-    padding: 1.3125rem 2.75rem;
   }
 }
 
 .button--style-blue-border {
-  @extend %transition-shorter;
   background-color: transparent;
   border: 1px solid color('blue');
-  text-decoration: none;
   color: color('blue');
-  border-radius: 0.75rem;
-  padding: 0.75rem 1.25rem;
-  line-height: 1;
 
   &:hover {
     background-color: color('blue');
     color: color('white');
-  }
-
-  @include media('md-up') {
-    padding: 0.75rem 1.3125rem;
   }
 }
 
