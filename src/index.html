@@ -11,8 +11,10 @@
 
     <!-- Start Page Content -->
     <main>
-      <section class="flex flex-col inner-content-max-width mxauto">
-        <div class="main-hero-text opacity-0 flex flex-col site-padding-x">
+      <section class="flex flex-col">
+        <div
+          class="main-hero-text opacity-0 flex flex-col site-padding-x inner-content-max-width mxauto"
+        >
           <p class="text-body color-gray pb2 sm:pb1_75 md:pb2_5">Hi, we're Seaborne.</p>
           <h1 class="text-header color-black pb2 sm:pb1_75 md:pb2_5 sm:col-8 md:col-12">
             We're your guides to sustainable business practices.
@@ -27,13 +29,27 @@
         </div>
         <div class="hero-image opacity-0">
           <img
-            class="w100"
+            class="hero-illustration absolute w100 z-3 r0 l0 inner-content-max-width mxauto"
             alt="Illustration of people doing outdoor activities in the mountains"
             src="img/hero-illustration-md.png"
             srcset="
               img/hero-illustration-sm.png 240w,
               img/hero-illustration-md.png 400w,
               img/hero-illustration-lg.png 720w
+            "
+            sizes="(min-width: 1200px) 720w,
+          (max-width: 768px) 400w,
+          (max-width: 380px) 240w"
+          />
+          <img
+            class="relative w100"
+            alt=""
+            role="presentation"
+            src="img/hero-blue-background-md.png"
+            srcset="
+              img/hero-blue-background-sm.png 240w,
+              img/hero-blue-background-md.png 400w,
+              img/hero-blue-background-lg.png 720w
             "
             sizes="(min-width: 1200px) 720w,
           (max-width: 768px) 400w,

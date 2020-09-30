@@ -103,6 +103,10 @@ button {
     animation-fade-in;
 }
 
+.hero-illustration {
+  top: -9%;
+}
+
 .hero-image {
   animation: $transition-duration-longer $transition-cubic-bezier 0.45s 1 normal forwards
     animation-fade-in;
@@ -185,13 +189,13 @@ button {
 
 .contact-illustration {
   @include media('md-up') {
-    margin-left: 30%;
+    margin-left: 5%;
   }
 }
 
 //Footer
 .footer {
-  border-top: 1px solid color('gray-light');
+  border-top: 1px solid color('gray-lighter');
 
   @include media('md-up') {
     margin-top: 7.375rem;

@@ -53,13 +53,14 @@ em {
 .text-subheader {
   font-family: $steinbeck;
 }
+
 .text-header {
   font-size: 2.25rem;
   line-height: 2.9375rem;
 
   @include media('md-up') {
-    font-size: 3.796875rem;
-    line-height: 4.1875rem;
+    font-size: 4.5rem;
+    line-height: 5rem;
   }
 }
 
@@ -77,9 +78,14 @@ em {
   font-size: 1.375rem;
   line-height: 1.8125rem;
 
+  @include media('sm-up') {
+    font-size: 1.875rem;
+    line-height: 2.4375rem;
+  }
+
   @include media('md-up') {
-    font-size: 2.625rem;
-    line-height: 3.4375rem;
+    font-size: 3rem;
+    line-height: 3.75rem;
   }
 }
 
@@ -108,6 +114,11 @@ em {
   line-height: 1.375rem;
   font-weight: 400;
 
+  @include media('sm-up') {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+  }
+
   @include media('md-up') {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -117,6 +128,11 @@ em {
 .text-footer {
   font-size: 0.75rem;
   line-height: 1.125rem;
+
+  @include media('md-up') {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 
   a {
     &:hover {
