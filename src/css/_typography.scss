@@ -18,7 +18,7 @@ em {
 }
 
 .bold {
-  font-style: bold;
+  font-weight: 500;
 }
 
 .font-800 {
@@ -109,8 +109,8 @@ em {
   font-weight: 400;
 
   @include media('md-up') {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
