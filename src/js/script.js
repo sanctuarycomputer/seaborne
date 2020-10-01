@@ -10,12 +10,22 @@ const copyToClipBoard = (string) => {
   document.body.removeChild(copyElement);
 };
 
-const copyButton = document.getElementsByClassName('copy-button')[0];
+const copyButton = document.querySelector('.copy-button');
 
 if (copyButton) {
   copyButton.addEventListener('click', function () {
-    const copyText = document.getElementsByClassName('email-address')[0].textContent;
+    const copyText = document.querySelector('.email-address').textContent;
     copyToClipBoard(copyText);
+
+    copyButton.innerHTML = 'Copied!';
+    copyButton.classList.add('button--style-primary', 'events-none');
+    copyButton.classList.remove('button--style-blue-border');
+
+    setTimeout(function () {
+      copyButton.innerHTML = 'Copy to clipboard';
+      copyButton.classList.add('button--style-blue-border');
+      copyButton.classList.remove('button--style-primary', 'events-none');
+    }, 9000);
   });
 }
 
