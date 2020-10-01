@@ -1,6 +1,6 @@
 @import 'config';
 @import '~@sanctucompu/basement/src/index';
-@import 'settings', 'reset', 'typography';
+@import 'settings', 'fontface', 'reset', 'typography';
 
 .site-content-max-width {
   max-width: $site-content-max-width;
