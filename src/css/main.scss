@@ -180,10 +180,6 @@ button {
   }
 }
 
-.copy-button {
-  width: 12.4375rem;
-}
-
 .contact-illustration {
   @include media('md-up') {
     margin-left: 5%;
