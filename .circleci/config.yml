@@ -36,6 +36,14 @@ jobs:
           name: Create Preview Link
           command: bash <(curl -s https://peek.run/ci)
 
+  deploy-production:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/seaborne
+      - checkout
+      - run: npx firebase deploy -m "Deploy from CI" --non-interactive --token $FIREBASE_TOKEN
+
 workflows:
   build:
     jobs:
@@ -48,3 +56,9 @@ workflows:
               ignore:
                 - main
                 - production
+      - deploy-production:
+          requires:
+            - build
+          filters:
+            branches:
+              only: production
