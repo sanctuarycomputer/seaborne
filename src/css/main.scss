@@ -2,8 +2,6 @@
 @import '~@sanctucompu/basement/src/index';
 @import 'settings', 'fontface', 'reset', 'typography';
 
-/* purgecss start ignore */
-
 .inner-content-max-width {
   max-width: $inner-content-max-width;
 }
@@ -181,5 +179,3 @@ button {
 .footer-detail-text {
   margin-top: 0.1rem;
 }
-
-/* purgecss end ignore */
