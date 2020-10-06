@@ -6105,13 +6105,6 @@ parcel-bundler@^1.12.4:
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
 
-parcel-plugin-purgecss@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-purgecss/-/parcel-plugin-purgecss-3.0.0.tgz#693ecbe66698ed1afbc70b300bcdc873e0aef25a"
-  integrity sha512-Qz20tltkSyqmRrRyKAHSIoqyfDIREFgvrkf3VhgineeOHgRbBdDHR4bs0iRvy9fJqS5MNn6r1RpZvxkk0BybkQ==
-  dependencies:
-    purgecss "^2.2.1"
-
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
@@ -6791,7 +6784,7 @@ pupa@^2.0.1:
   dependencies:
     escape-goat "^2.0.0"
 
-purgecss@^2.2.1, purgecss@^2.3.0:
+purgecss@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-2.3.0.tgz#5327587abf5795e6541517af8b190a6fb5488bb3"
   integrity sha512-BE5CROfVGsx2XIhxGuZAT7rTH9lLeQx/6M0P7DTXQH4IUc3BBzs9JUzt4yzGf3JrH9enkeq6YJBe9CTtkm1WmQ==
