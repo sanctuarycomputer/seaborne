@@ -172,26 +172,6 @@ button {
   }
 }
 
-//Contact
-.contact-page {
-  animation: $transition-duration-longer $transition-cubic-bezier 0.25s 1 normal forwards
-    animation-fade-in;
-
-  @include media('md-up') {
-    padding-right: 0;
-  }
-}
-
-.contact-illustration {
-  @include media('md-up') {
-    margin-left: 5%;
-  }
-}
-
-.copy-button {
-  padding: 1.5rem;
-}
-
 //Footer
 .footer {
   border-top: 1px solid color('gray-lighter');
