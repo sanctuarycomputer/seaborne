@@ -38,7 +38,7 @@ button {
   text-decoration: none;
   height: 2.375rem;
   border-radius: 0.625rem;
-  line-height: 0.75rem;
+  line-height: 1rem;
 }
 
 .button--style-primary {
@@ -96,6 +96,7 @@ button {
 .nav-button {
   font-size: 0.875rem;
   font-weight: 500;
+  line-height: 0.75rem;
 }
 
 //Main Hero
@@ -115,8 +116,6 @@ button {
 
 //Impact Section
 .impact-section {
-  padding-bottom: 13.625rem;
-
   @include media('md-up') {
     padding-bottom: 15.6875rem;
   }
